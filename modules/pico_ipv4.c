@@ -1320,7 +1320,7 @@ int pico_ipv4_link_del(struct pico_device *dev, struct pico_ip4 address)
 }
 
 
-struct pico_ipv4_link *pico_ipv4_link_get(struct pico_ip4 *address)
+struct pico_ipv4_link *pico_ipv4_link_get(const struct pico_ip4 *address)
 {
     struct pico_ipv4_link test = {
         0

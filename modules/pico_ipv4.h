@@ -104,7 +104,7 @@ int pico_ipv4_link_del(struct pico_device *dev, struct pico_ip4 address);
 int pico_ipv4_rebound(struct pico_frame *f);
 
 int pico_ipv4_frame_push(struct pico_frame *f, struct pico_ip4 *dst, uint8_t proto);
-struct pico_ipv4_link *pico_ipv4_link_get(struct pico_ip4 *address);
+struct pico_ipv4_link *pico_ipv4_link_get(const struct pico_ip4 *address);
 struct pico_ipv4_link *pico_ipv4_link_by_dev(struct pico_device *dev);
 struct pico_ipv4_link *pico_ipv4_link_by_dev_next(struct pico_device *dev, struct pico_ipv4_link *last);
 struct pico_device *pico_ipv4_link_find(struct pico_ip4 *address);
